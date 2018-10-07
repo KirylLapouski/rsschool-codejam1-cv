@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Document</title>
+  <title>CV</title>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
   <link rel="stylesheet" href="./css/style.css">
@@ -12,14 +12,16 @@
 <body>
   <main>
   <article class="main-info">
-    <h1 class="initials">Kirill Lapkovsky</h1>
-    <p class="specialty">Junior Javascript developer</p>
+    <div class="main-info__title">
+        <h1 class="initials">Kirill Lapkovsky</h1>
+        <p class="specialty">Junior Javascript developer</p>
+    </div>
     <section class="summary">
 
     </section>
     <div class="photo"><img src="https://yadi.sk/i/1hI6kYQsLKI01A" width="300" height="300" alt="photo"></div>
     <section class="contacts">
-      <ul>
+      <ul class="contacts__list">
         <li><a href="https://www.linkedin.com/in/kirill-lapkovsky-b29942142/">linkedin.com/in/kirill-lapkovsky-b29942142 <i class="fab fa-linkedin-in"></i></a></li>
         <li><a href="mailto:lapkovskyk@mail.ru">lapkovskyk@mail.ru <i class="fas fa-envelope"></i></a></li>
         <li><a href="https://github.com/KirylLapouski">KirylLapouski <i class="fab fa-github"></i></a></li>
@@ -36,18 +38,22 @@
       <li class="technology-list__item">react</li>
       <li class="technology-list__item">redux</li>
       <li class="technology-list__item">vue</li>
+      <li class="technology-list__item">vuex</li>
       <li class="technology-list__item">mysql</li>
       <li class="technology-list__item">loopback(nodejs framework)</li>
+      <li class="technology-list__item">express</li>
       <li class="technology-list__item">git</li>
     </ul>
   </section>
   <section class="projects">
-    <h2 class="projects__title">projects<h2>
+    <h2 class="projects__title">projects</h2>
     <article class="cv-item">
       <h1 class="cv-item__title">Med organisation database</h1>
       <h2 class="cv-item__subtitle">PSU</h2>
-      <div class="cv-item__time-interval">
-        <time datetime="2017-10">october 2017<time><time datetime="2017-12">december 2017</time>
+      <div class="cv-item__additional">
+        <div class="cv-item__time-interval">
+          <time datetime="2017-10">october 2017<time> - <time datetime="2017-12">december 2017</time>
+        </div>
       </div>
       <div class="cv-item__place">Polotsk, Belarus</div>
       <ul class="cv-item__technology technology-list">
@@ -68,10 +74,12 @@
     <article class="cv-item">
       <h1 class="cv-item__title">Test platform</h1>
       <h2 class="cv-item__subtitle">PSU</h2>
-      <div class="cv-item__time-interval">
-        <time datetime="2018-03">march 2018<time><time datetime="2018-07">june 2018</time>
+      <div class="cv-item__additional">
+        <div class="cv-item__time-interval">
+          <time datetime="2018-03">march 2018<time> - <time datetime="2018-07">june 2018</time>
+        </div>
+        <div class="cv-item__place">Polotsk, Belarus</div>
       </div>
-      <div class="cv-item__place">Polotsk, Belarus</div>
       <ul class="cv-item__technology technology-list">
           <li class="technology-list__item">js</li>
           <li class="technology-list__item">html5</li>
@@ -98,10 +106,12 @@
       <article class="cv-item">
           <h1 class="cv-item__title">EPAM</h1>
           <p class="cv-item__subtitle">industrial practice in Vitebsk office of EPAM Systems</p>
-          <div class="cv-item__time-interval">
-            <time datetime="2017-05">may 2017<time><time datetime="2017-06">june 2017</time>
+          <div class="cv-item__additional">
+            <div class="cv-item__time-interval">
+              <time datetime="2017-05">may 2017<time> - <time datetime="2017-06">june 2017</time>
+            </div>
+            <div class="cv-item__place">Vitebsk, Belarus</div>
           </div>
-          <div class="cv-item__place">Vitebsk, Belarus</div>
           <p class="cv-item__description">
               During internship at EPAM, applicant worked as part of a team of students on a project for the internal needs of the company.
               Engaged in the development of DAO (wrote mapping files on MyBatis). First team work experience.
@@ -110,10 +120,12 @@
       <article class="cv-item">
           <h1 class="cv-item__title">Artezio</h1>
           <p class="cv-item__subtitle">Junior JavaScipt developer</p>
-          <div class="cv-item__time-interval">
-            <time datetime="2018-06">june 2017<time><time>till now</time>
+          <div class="cv-item__additional">
+            <div class="cv-item__time-interval">
+              <time datetime="2018-06">june 2017<time> - <time>till now</time>
+            </div>
+            <div class="cv-item__place">Vitebsk, Belarus</div>
           </div>
-          <div class="cv-item__place">Vitebsk, Belarus</div>
           <p class="cv-item__description">
             Working in Vitebsk office of Artezio.
           </p>
@@ -124,8 +136,10 @@
     <article class="cv-item">
         <h1 class="cv-item__title">psu</h1>
         <p class="cv-item__subtitle">first stage of higher education</p>
-        <div class="cv-item__time-interval">
-          <time datetime="2014-09">september 2014<time><time datetime="2018-06">june 2018</time>
+        <div class="cv-item__additional">
+          <div class="cv-item__time-interval">
+            <time datetime="2014-09">september 2014</time><time datetime="2018-06">june 2018</time>
+          </div>
         </div>
         <div class="cv-item__place">Polotsk, Belarus</div>
         <p class="cv-item__description">
@@ -135,10 +149,12 @@
     <article class="cv-item">
         <h1 class="cv-item__title">psu</h1>
         <p class="cv-item__subtitle">second stage of higher education</p>
-        <div class="cv-item__time-interval">
-          <time datetime="2018-09">september 2018<time><time>till now</time>
+        <div class="cv-item__additional">
+          <div class="cv-item__time-interval">
+            <time datetime="2018-09">september 2018<time> - <time>till now</time>
+          </div>
+          <div class="cv-item__place">Polotsk, Belarus</div>
         </div>
-        <div class="cv-item__place">Polotsk, Belarus</div>
         <p class="cv-item__description">
           Passed the examination for the second stage of higher education in Polotsk State University. Studying by specialty “Web-development and internet technology”.
         </p>

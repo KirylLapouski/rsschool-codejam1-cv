@@ -1,0 +1,49 @@
+main {
+  margin: 0 auto;
+  width: 1024px;
+  box-shadow: 0px 0px 20px 1px rgba(0, 0, 0, 0.5);
+  padding: 10px 20px
+}
+.main-info {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid black;
+}
+.main-info__title {
+  display: flex;
+  flex-direction: column;
+}
+.contacts__list{
+  list-style: none;
+}
+/* skills */
+
+/* technology-list */
+.technology-list{
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+}
+.technology-list__item {
+  color: #721c24;
+  background-color: #f8d7da;
+  border-color: #f5c6cb;
+  padding: 10px 20px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  box-shadow: 4px 5px 19px 0px rgba(156, 140, 140, 0.5);
+}
+/* cv-item */
+
+.cv-item{
+  display: flex;
+  flex-direction: column;
+}
+.cv-item__title{
+  font-size: 22px;
+}
+
+.cv-item__subtitle {
+  font-size: 18px;
+}
