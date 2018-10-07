@@ -2,12 +2,15 @@ main {
   margin: 0 auto;
   width: 1024px;
   box-shadow: 0px 0px 20px 1px rgba(0, 0, 0, 0.5);
-  padding: 10px 20px
+  padding: 10px 35px;
+  position: relative;
 }
 .main-info {
   display: flex;
   justify-content: space-between;
   border-bottom: 1px solid black;
+  margin-bottom: 10px;
+  padding-bottom: 20px;
 }
 .main-info__title {
   display: flex;
@@ -16,13 +19,30 @@ main {
 .contacts__list{
   list-style: none;
 }
-/* skills */
+.contacts__item {
+  display: flex;
+  justify-content: flex-end
+}
+
+.link:hover {
+  text-decoration: none
+}
+.title{
+  text-transform: capitalize;
+  margin-bottom: 20px;
+}
+
+.photo {
+  border-radius: 10%;
+}
+
 
 /* technology-list */
 .technology-list{
   display: flex;
   flex-wrap: wrap;
   list-style: none;
+  padding-left: 0px;
 }
 .technology-list__item {
   color: #721c24;
@@ -44,6 +64,35 @@ main {
   font-size: 22px;
 }
 
+.cv-item__title::before{
+  display: block;
+  position: absolute;
+  background: #721c24;
+  width: 15px;
+  height: 30px;
+  content: '';
+  left: 0px;
+}
+
 .cv-item__subtitle {
   font-size: 18px;
 }
+
+.cv-item__additional{
+  display: flex;
+  color: gray;
+}
+
+.cv-item__subtitle {
+  text-transform: capitalize;
+}
+
+.last-child {
+  margin-left: auto;
+}
+
+.language__list {
+  list-style: none;
+  padding-left: 0px;
+}
+
